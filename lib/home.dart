@@ -73,8 +73,8 @@ class _HomeState extends State<Home> {
                 style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),
             Text("Student ID: ${_student!.studentId}",style: TextStyle(fontSize: 17),),
             Text("Department: ${_student!.departmentName}"),
-            Text("CGPA: ${_results[0].cgpa}",style: TextStyle(fontSize: 20,color: Color.fromARGB(255, 205, 7, 255),fontWeight: FontWeight.bold),),
-
+            if(_results.isNotEmpty)
+             Text("CGPA: ${_results[0].cgpa}",style: const TextStyle(fontSize: 20,color: Color.fromARGB(255, 205, 7, 255),fontWeight: FontWeight.bold),),
           ],
         ),
       ),

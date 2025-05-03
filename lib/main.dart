@@ -1,4 +1,5 @@
 import 'package:diu_result/home.dart';
+import 'package:diu_result/resultPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "DIU Result",
-      home: Home(),
+      home: ResultPage(),
     );
   }
 }
